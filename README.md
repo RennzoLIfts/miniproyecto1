@@ -1,18 +1,16 @@
 Este es el codigo utilizado para el item 1 del miniproyecto el cual explicare brevemente
 
+Partiendo por las Funciones Base tenemos a
 
-Partiendo por las funciones base tenemos a
+validacion(m,M,text): Esta función se utiliza para asegurar que, al introducir un valor en una variable con límites definidos, dicho valor se mantenga dentro de los rangos establecidos. De esta manera, se evita cualquier tipo de error durante la ejecución del código.
 
-validacion(m,M,text): Esta funcion esta hecha para que al introducir algun valor a una variable que requiera limite se asegure que el valor introducido este dentro de esos limites establecidos para asi no tener ningun tipo de error en la ejecucion del codigo
+apagar_luces() : Esta es una de las funciones más importantes, ya que se debe ejecutar al inicio de cada turno, ronda o juego. Su propósito es apagar todos los LEDs encendidos para evitar la mezcla de colores, lo cual podría generar confusión al tener dos canales de colores combinados.
 
-apagar_luces() : esta funcion es de las más importantes debido a que es necesario al momento de iniciar cada turno o cada nueva ronda o cada nuevo juego apagar los leds encendidos para que asi no se mezcle ningun color al tener 2 canales de colores combinados
+encender_luces_aleatorias() : Esta función se ejecuta al inicio del juego para indicar cuáles son las zonas seguras y las zonas de trampa. Las zonas seguras están representadas por LEDs azules, mientras que las trampas están indicadas por LEDs rojos.
 
-encender_luces_aleatorias() : esta funcion ejecutada al inicio del juego es para representar cuales son las zonas seguras representadas por el led encendido en azul o las de trampa representadas por los led encendidos de rojo
+encender_patron(posicion_azul): Esta es la función principal del juego, encargada de establecer un patrón que el jugador debe seguir. El patrón elegido es una secuencia continua de luz azul, que comienza en el LED 1 (de izquierda a derecha). Cada segundo, la luz azul avanza de posición, moviéndose desde el LED 1 hasta el LED 5, en orden sucesivo.
 
-encender_patron(posicion_azul): esta funcion ya es la funcion principal usada en el juego el cual da un patron a seguir para asi el jugador pueda intentar predecir la siguiente luz y acertar.
-En este caso el patron elegido es el azul continuo es decir que al inicio de la ronda la luz azul se encuentra en el led 1 (de izquierda a derecha) y cada segundo que pasa el led avanzara de posicion saltando del led 1 al 2 ... al 5
+juego(): Esta es la función que contiene la lógica del juego. En ella se implementan los bucles for y while necesarios para su correcta ejecución. El juego inicia con la entrada manual de la cantidad de rondas y jugadores. Al finalizar, se muestra la tabla de puntuaciones y se anuncia al ganador.
 
-
-juego(): este es la funcion del juego en si, donde esta contenido los bucles tanto for como while para la ejecucion correcta del juego, inciando por la entrada manual de la cantidad de rondas, luego la cantidad de jugadores y ya al final del juego mostrando la tabla de puntuaciones
-y el ganador
-
+https://youtube.com/shorts/Oi-R_xGfQys
+https://youtu.be/7WSHcyi-2Mg
